@@ -11,9 +11,9 @@ dwm_networkmanager () {
 
     printf "%s" "$SEP1"
     if [ "$IDENTIFIER" = "unicode" ]; then
-        printf "🌐 %s %s | %s" "$CONNAME" "$PRIVATE" 
+        printf "🌐 %s %s %s" "$CONNAME" "$PRIVATE" 
     else
-        printf "NET %s %s | %s" "$CONNAME" "$PRIVATE"
+        printf "NET %s %s %s" "$CONNAME" "$PRIVATE"
     fi
     printf "%s\n" "$SEP2"
 }
