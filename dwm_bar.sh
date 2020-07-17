@@ -17,10 +17,11 @@ export SEP2="]"
 . "$DIR/bar-functions/dwm_weather.sh"
 . "$DIR/bar-functions/dwm_networkmanager.sh"
 . "$DIR/bar-functions/dwm_date.sh"
+. "$DIR/bar-functions/dwm_disk.sh"
 
 # Update dwm status bar every second
 while true
 do
-    xsetroot -name "$(dwm_battery)$(dwm_alsa)$(dwm_networkmanager)$(dwm_date)"
+    xsetroot -name "$(dwm_disk)(dwm_battery)$(dwm_alsa)$(dwm_networkmanager)$(dwm_date)"
     sleep 1
 done
